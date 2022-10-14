@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="estilo.css" />
-    <title>Formulario Mentoria</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="estilo.css" />
+  <title>Formulario Mentoria</title>
+</head>
+
+<body>
+
+  <div class="page">
 
     <header>
-      <div>
 
-        <h1>Mentoria</h1>
-        <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+      <h1>Mentoria</h1>
+      <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
 
-      </div>
     </header>
+
+
 
     <form id="my-form">
       <fieldset>
@@ -33,24 +34,24 @@
 
             <div class="caixa-wrapper">
               <label for="txt-name">Nome</label>
-              <input id="txt-name" type="text"/>
+              <input id="txt-name" type="text" />
             </div>
-  
+
             <div class="caixa-wrapper">
               <label for="txt-lastname">Sobrenome</label>
-              <input id="txt-lastname" type="text"/>
+              <input id="txt-lastname" type="text" />
             </div>
 
           </div>
 
           <div class="caixa-wrapper">
             <label for="txt-email">E-mail <span>(digite um e-mail valido)</span></label>
-            <input id="txt-email" type="email"/>
+            <input id="txt-email" type="email" />
           </div>
 
           <div class="caixa-wrapper">
             <label for="txt-passowrd">Senha</label>
-            <input id="txt-password" type="password"/>
+            <input required id="txt-password" type="password" />
           </div>
 
 
@@ -65,17 +66,11 @@
 
         <div class="col-2">
           <legend>Informações do Mentor</legend>
-
-         
-            <div class="caixa-wrapper">
-              <label for="txt-namementor">Nome do seu mentor <span>(só o primeiro nome)</span></label>
-              <input id="txt-namementor" type="text"/>
-            </div>
-  
-
+          <div class="caixa-wrapper">
+            <label for="txt-namementor">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+            <input id="txt-namementor" type="text" />
+          </div>
         </div>
-
-
 
       </fieldset>
 
@@ -89,18 +84,24 @@
 
             <div class="caixa-wrapper">
               <label for="txt-data">Data <span>(DD/MM/AAAA)</span> </label>
-              <input id="txt-data" type="date"/>
-            </div>
-  
-            <div class="caixa-wrapper">
-              <label for="txt-horario-1">Das</label>
-              <input id="txt-horario-1" type="time"/>
+              <input id="txt-data" type="date" />
             </div>
 
-            <div class="caixa-wrapper">
-              <label for="txt-horario-2">Até</label>
-              <input id="txt-horario-2" type="time"/>
+            <div class="date-area">
+
+              <div class="caixa-wrapper">
+                <label for="txt-horario-1">Das</label>
+                <input id="txt-horario-1" type="time" />
+              </div>
+  
+              <div class="caixa-wrapper">
+                <label for="txt-horario-2">Até</label>
+                <input id="txt-horario-2" type="time" />
+              </div>
+
+
             </div>
+
 
           </div>
 
@@ -109,18 +110,23 @@
 
             <div class="caixa-wrapper">
               <label for="txt-data">Data <span>(DD/MM/AAAA)</span> </label>
-              <input id="txt-data" type="date"/>
-            </div>
-  
-            <div class="caixa-wrapper">
-              <label for="txt-horario-1">Das</label>
-              <input id="txt-horario-1" type="time"/>
+              <input id="txt-data" type="date" />
             </div>
 
-            <div class="caixa-wrapper">
-              <label for="txt-horario-2">Até</label>
-              <input id="txt-horario-2" type="time"/>
-            </div>
+              <div class="date-area">
+
+                <div class="caixa-wrapper">
+                  <label for="txt-horario-1">Das</label>
+                  <input id="txt-horario-1" type="time" />
+                </div>
+  
+                <div class="caixa-wrapper">
+                  <label for="txt-horario-2">Até</label>
+                  <input id="txt-horario-2" type="time" />
+                </div>
+
+              </div>
+
 
           </div>
 
@@ -135,9 +141,13 @@
     </form>
 
     <footer>
-      <input form="my-form" type="submit" value="Salvar"/>
+      <input form="my-form" type="submit" value="Salvar" />
     </footer>
 
+  </div>
 
-  </body>
+
+
+</body>
+
 </html>
