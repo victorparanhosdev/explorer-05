@@ -10,13 +10,20 @@
   --cinza-color: #EFEFEF;
 }
 
-body {
+body{
   background: #E5E5E5;
   font-family: 'Poppins', sans-serif;
+}
+
+.page {
+
+  width: 750px;
+  margin: auto;
 
 }
 
-body::before {
+
+.page::before {
   background-color: var(--purple-color);
   height: 450px;
   width: 100%;
@@ -29,10 +36,6 @@ body::before {
 }
 
 
-.page {
-  width: 750px;
-  margin: auto;
-}
 
 header {
   color: #FFFFFF;
@@ -97,7 +100,8 @@ label span {
 }
 
 input:focus {
-  outline: 2px solid var(--purple-color);
+  border-radius: 8px;
+  outline: 1px solid var(--purple-color);
 }
 
 
@@ -202,7 +206,7 @@ footer input {
 
 footer input:hover {
   transition-timing-function: linear;
-  background-color: #da5872;
+  background-color: #dd6a81;
 
 }
 
